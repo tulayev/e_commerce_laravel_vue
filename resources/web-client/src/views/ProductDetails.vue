@@ -116,7 +116,7 @@ export default {
     },
     computed: {
         items() {
-            return [...Array(this.product.count_in_stock).keys()]
+            return [...Array(this.product.count_in_stock).keys()] // hello
         },
         ...mapGetters({
             product: 'productSingle',
