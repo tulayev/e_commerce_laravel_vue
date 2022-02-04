@@ -101,7 +101,7 @@ class ProductController extends Controller
     public function destroy($id) : JsonResponse
     {
         $product = Product::find($id);
-
+        // Hello
         if ($product) {
             if (Auth::user()->cannot('delete', $product)) {
                 return response()->json([
