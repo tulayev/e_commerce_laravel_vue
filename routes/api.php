@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+// Protected routes
 Route::middleware('auth:sanctum')->group(function () {
     Route::prefix('product')->group(function () {
         Route::post('/', [\App\Http\Controllers\Api\ProductController::class, 'store']);
