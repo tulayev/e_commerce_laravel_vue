@@ -14,6 +14,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('/logout', [\App\Http\Controllers\Api\AuthController::class, 'logout']);
 });
 
+// Public routes
 Route::get('/products', [\App\Http\Controllers\Api\ProductController::class, 'index']);
 Route::get('/product/{id}', [\App\Http\Controllers\Api\ProductController::class, 'show']);
 Route::post('/register', [\App\Http\Controllers\Api\AuthController::class, 'register']);
